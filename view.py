@@ -12,6 +12,7 @@ def what_to_do():
 
 
 def export_book(book: dict):
-    with open('newfile.txt','a') as file:
+    with open('newfile.txt','a') as newfile:
         for k, v in book.items():
-            file.write(book[k][v])
+            newfile.write(book[k][v])
+            

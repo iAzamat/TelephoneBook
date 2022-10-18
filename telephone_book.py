@@ -1,6 +1,6 @@
 name = ''
 phone = ''
-t_book = {}
+# t_book = {}
 
 
 def init(person_name, number):
