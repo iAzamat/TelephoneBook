@@ -1,13 +1,19 @@
+from argparse import Action
+
+
 name = ''
 phone = ''
-# t_book = {}
+action = ''
+t_book = {}
 
 
 def init(person_name, number):
     global name
     global phone
+    global action
     name = person_name
     phone = number
+    
 
 
 def create_new_note(person_name: str, note: dict, number: str):
