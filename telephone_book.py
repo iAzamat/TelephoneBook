@@ -11,8 +11,7 @@ def init(person_name, number):
 
 
 def create_new_note(person_name: str, note: dict, number: str):
-    note[person_name] = list()
-    list.append(number)
+    note[person_name] = [number]
     return note
 
 
