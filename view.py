@@ -11,8 +11,10 @@ def get_number():
     return phone
 
 def what_to_do():
+    global action
     with open('file.txt', 'r') as f:
-        return str(f.readlines()[2])
+        action = str(f.readlines()[2])
+    return action
 
 
 def export_book(book: dict):
