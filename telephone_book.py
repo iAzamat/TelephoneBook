@@ -1,36 +1,39 @@
 name = ''
 phone = ''
-t_book = {}
 
 
-def init(a, number, book):
+
+def init(person_name, number):
     global name
     global phone
-    global t_book
-    name = a
+    name = person_name
     phone = number
-    t_book = book
 
 
-def create_new_note(a: str, note: dict, number: str):
-    note[a] = list()
-    note[a].append(number)
+def create_new_note(person_name: str, note: dict, number: str):
+    note[person_name] = list()
+    note[person_name].append(number)
+    return note
 
 
-def create_new_list(a: str, book: dict):
-    book[a[0]] = dict()
+def create_new_list(person_name: str, book: dict):
+    book[person_name[0]] = dict()
+    return book
 
 
-def update_note(a: str, note: dict, number: str):
-    note[a] = number
+def update_note(person_name: str, note: dict, number: str):
+    note[person_name] = number
+    return note
 
 
-def delete_note(a: str, note: dict):
-    del note[a]
+def delete_note(person_name: str, note: dict):
+    del note[person_name]
+    return note
 
 
-def append_number(a: str, number: str, note: dict):
-    note[a].append(number)
+def append_number(person_name: str, number: str, note: dict):
+    note[person_name].append(number)
+    return note
 
 
     
