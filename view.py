@@ -1,14 +1,14 @@
 def get_name():
     with open('file.txt', 'r') as f:
-        return str(f.readlines()[0]) # пока не поняла, верно ли писать так
+        return str(f.readlines([0])) # пока не поняла, верно ли писать так
 
 def get_number():
     with open('file.txt', 'r') as f:
-        return str(f.readlines()[1])
+        return str(f.readlines([1]))
 
 def what_to_do():
     with open('file.txt', 'r') as f:
-        return str(f.readlines()[2])
+        return str(f.readlines([2]))
 
 
 def export_book(book: dict):
