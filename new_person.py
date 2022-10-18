@@ -17,8 +17,9 @@ def writing_down():
         tb.append_number(name, number, t_book[name[0]])
     elif action == 'удалить номер':
         tb.delete_note(name, t_book[name[0]])
+    return t_book
     
-writing_down()
+t_book = writing_down()
 
 
 for k, v in t_book.items():
