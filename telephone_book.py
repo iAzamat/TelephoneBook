@@ -12,7 +12,7 @@ def init(person_name, number):
 
 def create_new_note(person_name: str, note: dict, number: str):
     note[person_name] = list()
-    note[person_name].append(number)
+    list.append(number)
     return note
 
 
