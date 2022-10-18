@@ -17,6 +17,7 @@ def writing_down():
         tb.append_number(name, number, t_book[name[0]])
     elif action == 'удалить номер':
         tb.delete_note(name, t_book[name[0]])
-    view.export_book(t_book)
+    return t_book
+    
     
 
