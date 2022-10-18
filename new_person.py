@@ -1,6 +1,11 @@
 import telephone_book as tb
 import view
 
+t_book = {}
+
+def init(book: dict):
+    global t_book
+
 
 def writing_down(t_book: dict):
     name = view.get_name()
