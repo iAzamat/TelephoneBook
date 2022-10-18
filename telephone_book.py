@@ -3,8 +3,8 @@ from argparse import Action
 
 name = ''
 phone = ''
-action = ''
-t_book = {}
+# action = ''
+# t_book = {}
 
 
 def init(person_name, number):
