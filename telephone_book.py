@@ -3,7 +3,7 @@ from argparse import Action
 
 name = ''
 phone = ''
-# action = ''
+action = ''
 # t_book = {}
 
 

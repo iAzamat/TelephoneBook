@@ -1,10 +1,14 @@
 def get_name():
+    global name
     with open('file.txt', 'r') as f:
-        return str(f.readlines()[0]) # пока не поняла, верно ли писать так
+        name = str(f.readlines()[0]) # пока не поняла, верно ли писать так
+    return name
 
 def get_number():
+    global phone
     with open('file.txt', 'r') as f:
-        return str(f.readlines()[1])
+        phone = str(f.readlines()[1])
+    return phone
 
 def what_to_do():
     with open('file.txt', 'r') as f:
