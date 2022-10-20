@@ -15,7 +15,6 @@ def init(person_name, number):
     phone = number
     
 
-
 def create_new_note(person_name: str, note: dict, number: str):
     note[person_name] = number
     return note
