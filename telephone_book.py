@@ -16,14 +16,8 @@ def init(person_name, number):
     
 
 
-def create_new_note(person_name: str, note: dict, number: str):
-    note[person_name] = [number]
-    return note
 
 
-def create_new_list(person_name: str, book: dict, number: str):
-    book[person_name[0]] = create_new_note(person_name, book, number)
-    return book
 
 
 def update_note(person_name: str, note: dict, number: str):

@@ -1,7 +1,6 @@
 import telephone_book as tb
 import view
 
-t_book = {}
 
 
 
