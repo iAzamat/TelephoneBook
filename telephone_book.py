@@ -14,10 +14,15 @@ def init(person_name, number):
     name = person_name
     phone = number
     
+def create_new_note(person_name: str, note: dict, number: str):
+    note[person_name] = number
+    return note
 
 
+def create_new_list(person_name: str, book: dict):
+    book[person_name[0]] = person_name
 
-
+    return book
 
 
 def update_note(person_name: str, note: dict, number: str):
