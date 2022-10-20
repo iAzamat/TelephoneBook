@@ -1,6 +1,7 @@
 from new_person import writing_down as wd
 import view
-t_book = {}
-t_book = wd(t_book)
+import json_module as jm
+t_book = wd()
 view.export_book(t_book)
-view.print_dict(t_book)
+print(t_book)
+jm.exp_json(t_book, filename = 'TelephoneBook')
