@@ -7,5 +7,5 @@ def imp_json(filename):
 
 
 def exp_json(data, filename):
-    with open(f'{filename}.json', 'w') as f:
+    with open(f'{filename}.json', 'w', encoding="cp1251") as f:
         json.dump(data, f)
